@@ -50,4 +50,7 @@ RUN \
 # Home Assistant S6-Overlay
 COPY rootfs /
 
+RUN \
+    wget -O - https://get.hacs.xyz | bash -
+
 WORKDIR /config
